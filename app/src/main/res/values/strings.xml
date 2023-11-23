@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragment Navigation Example</string>
+    <string name="button_go_to_fragment2">Go To Fragment 2</string>
+    <string name="button_go_to_fragment3">Go To Fragment 3</string>
+    <string name="button_go_to_fragmentGoal">Go To Fragment GOAL</string>
+    <string name="fragment2_Hola_textview">HOLA!</string>
+    <string name="fragment3_Caracola_textview">CARACOLA!</string>
+    <string name="fragment_goal_textview">GOAL!</string>
+</resources>

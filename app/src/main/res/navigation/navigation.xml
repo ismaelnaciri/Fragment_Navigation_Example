@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="cat.insvidreres.inf.fragmentnavigationexample.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_fragment22"
+            app:destination="@id/fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="cat.insvidreres.inf.fragmentnavigationexample.Fragment2"
+        android:label="Fragment2"
+        tools:layout="@layout/fragment_2">
+        <action
+            android:id="@+id/action_fragment2_to_fragment3"
+            app:destination="@id/fragment3"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_fragment2_to_goalFragment"
+            app:destination="@id/goalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="cat.insvidreres.inf.fragmentnavigationexample.Fragment3"
+        android:label="Fragment3"
+        tools:layout="@layout/fragment_3">
+        <action
+            android:id="@+id/action_fragment3_to_goalFragment"
+            app:destination="@id/goalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalFragment"
+        android:name="cat.insvidreres.inf.fragmentnavigationexample.GoalFragment"
+        android:label="GoalFragment"
+        tools:layout="@layout/fragment_goal"/>
+</navigation>
